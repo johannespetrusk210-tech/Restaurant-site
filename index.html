@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TasteBite Takeaway</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --red:#E8201A;
+  --yellow:#FFD600;
+  --dark:#111;
+  --light:#FFF8F0;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'DM Sans',sans-serif;background:var(--light);color:var(--dark);}
+
+/* NAV */
+nav{
+position:fixed;top:0;width:100%;display:flex;justify-content:space-between;
+padding:14px 30px;background:#111;color:#fff;z-index:100;
+}
+.logo{font-family:'Bebas Neue';font-size:1.8rem;color:var(--yellow);}
+nav a{color:#fff;text-decoration:none;margin-left:20px;font-size:0.9rem;}
+nav a:hover{color:var(--yellow);}
+
+/* HERO */
+.hero{
+height:100vh;display:flex;align-items:center;
+background:url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1600') center/cover;
+position:relative;color:#fff;
+}
+.hero::after{
+content:'';position:absolute;inset:0;background:rgba(0,0,0,0.7);
+}
+.hero-content{position:relative;padding:0 30px;max-width:600px;}
+.hero h1{font-size:3rem;margin-bottom:15px;}
+.hero span{color:var(--yellow);}
+.hero p{margin-bottom:20px;}
+
+.btn{
+display:inline-block;padding:14px 25px;background:#25D366;color:#fff;
+text-decoration:none;border-radius:5px;font-weight:bold;
+}
+
+/* SECTION */
+section{padding:80px 30px;}
+.title{font-size:2rem;margin-bottom:30px;font-family:'Bebas Neue';}
+
+/* MENU */
+.menu-item{
+display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #ddd;
+}
+.best{color:var(--red);font-weight:bold;}
+
+/* LOCATION */
+.map iframe{width:100%;height:300px;border:0;border-radius:10px;}
+
+/* CONTACT */
+.contact{background:var(--red);color:#fff;text-align:center;}
+.contact a{background:#fff;color:var(--red);padding:12px 20px;margin:10px;display:inline-block;text-decoration:none;}
+
+footer{text-align:center;padding:20px;background:#111;color:#fff;}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">TasteBite</div>
+<div>
+<a href="#menu">Menu</a>
+<a href="#location">Location</a>
+<a href="#contact">Order</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-content">
+<h1>Delicious Food <br><span>Ready Fast</span></h1>
+<p>Order hot meals directly on WhatsApp. No apps needed.</p>
+
+<a class="btn" 
+href="https://wa.me/264812345678?text=Hi%20TasteBite,%20I%20would%20like%20to%20order:%0A-%20%0A-%20%0AMy%20location%20is:"
+target="_blank">
+Order on WhatsApp
+</a>
+
+</div>
+</section>
+
+<!-- MENU -->
+<section id="menu">
+<h2 class="title">Menu</h2>
+
+<div class="menu-item">
+<span class="best">🔥 Burger + Chips (Best Seller)</span>
+<span>N$70</span>
+</div>
+
+<div class="menu-item">
+<span>Fried Chicken</span>
+<span>N$80</span>
+</div>
+
+<div class="menu-item">
+<span>Kota</span>
+<span>N$60</span>
+</div>
+
+<div class="menu-item">
+<span>Chicken + Chips</span>
+<span>N$75</span>
+</div>
+
+</section>
+
+<!-- LOCATION -->
+<section id="location">
+<h2 class="title">Find Us</h2>
+
+<p><strong>📍 Katutura, Windhoek</strong></p>
+<p>🕒 Mon–Sat: 10AM – 9PM</p>
+<p>🛵 Delivery available (N$10 – N$30)</p>
+
+<div class="map">
+<iframe 
+src="https://www.google.com/maps?q=Katutura,Windhoek&output=embed">
+</iframe>
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+<h2 class="title">Order Now</h2>
+<p>Message us and get your food fast.</p>
+
+<a href="https://wa.me/264812345678?text=Hi%20TasteBite,%20I%20want%20to%20order">
+WhatsApp Order
+</a>
+
+<a href="tel:+264812345678">
+Call Now
+</a>
+
+</section>
+
+<footer>
+© 2026 TasteBite Takeaway - Windhoek
+</footer>
+
+</body>
+</html>

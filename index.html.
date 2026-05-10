@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaWeb Studios</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 text-white">
+
+  <!-- NAVBAR -->
+  <nav class="flex justify-between items-center p-6 bg-black shadow-lg sticky top-0 z-50">
+    <h1 class="text-2xl font-bold text-yellow-400">NovaWeb</h1>
+
+    <ul class="hidden md:flex gap-6">
+      <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
+      <li><a href="#services" class="hover:text-yellow-400">Services</a></li>
+      <li><a href="#portfolio" class="hover:text-yellow-400">Portfolio</a></li>
+      <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+    <h1 class="text-5xl md:text-7xl font-bold mb-6">
+      Modern Websites For Growing Businesses
+    </h1>
+
+    <p class="max-w-2xl text-gray-300 text-lg mb-8">
+      We create fast, modern and responsive websites that help businesses grow online.
+    </p>
+
+    <div class="flex gap-4">
+      <button class="bg-yellow-400 text-black px-6 py-3 rounded-xl font-bold hover:scale-105 transition">
+        View Work
+      </button>
+
+      <button class="border border-yellow-400 px-6 py-3 rounded-xl hover:bg-yellow-400 hover:text-black transition">
+        Contact Us
+      </button>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-20 px-6 bg-gray-900">
+    <h2 class="text-4xl font-bold text-center mb-12">Services</h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="bg-black p-8 rounded-2xl shadow-lg hover:scale-105 transition">
+        <h3 class="text-2xl font-bold mb-4 text-yellow-400">Business Websites</h3>
+        <p class="text-gray-300">Professional websites for companies and brands.</p>
+      </div>
+
+      <div class="bg-black p-8 rounded-2xl shadow-lg hover:scale-105 transition">
+        <h3 class="text-2xl font-bold mb-4 text-yellow-400">Restaurant Websites</h3>
+        <p class="text-gray-300">Online menus, reservations and ordering systems.</p>
+      </div>
+
+      <div class="bg-black p-8 rounded-2xl shadow-lg hover:scale-105 transition">
+        <h3 class="text-2xl font-bold mb-4 text-yellow-400">Church Websites</h3>
+        <p class="text-gray-300">Modern ministry websites with events and sermons.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="py-20 px-6">
+    <h2 class="text-4xl font-bold text-center mb-12">Portfolio</h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-lg">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-2">Restaurant Website</h3>
+          <p class="text-gray-400">Modern food ordering website.</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-lg">
+        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-2">Corporate Website</h3>
+          <p class="text-gray-400">Professional company landing page.</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-lg">
+        <img src="https://images.unsplash.com/photo-1438232992991-995b7058bbb3" class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-2">Church Website</h3>
+          <p class="text-gray-400">Faith-based modern ministry design.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="py-20 bg-gray-900 px-6">
+    <h2 class="text-4xl font-bold text-center mb-12">Testimonials</h2>
+
+    <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
+      <div class="bg-black p-8 rounded-2xl shadow-lg">
+        <p class="text-gray-300 mb-4">
+          “Professional service and beautiful design.”
+        </p>
+        <h4 class="font-bold text-yellow-400">Local Business Owner</h4>
+      </div>
+
+      <div class="bg-black p-8 rounded-2xl shadow-lg">
+        <p class="text-gray-300 mb-4">
+          “Fast delivery and excellent communication.”
+        </p>
+        <h4 class="font-bold text-yellow-400">Restaurant Client</h4>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 px-6 text-center">
+    <h2 class="text-4xl font-bold mb-8">Contact Us</h2>
+
+    <p class="text-gray-300 mb-6">
+      Ready to build your website?
+    </p>
+
+    <div class="flex justify-center gap-6 flex-wrap">
+      <a href="#" class="bg-yellow-400 text-black px-6 py-3 rounded-xl font-bold">
+        WhatsApp
+      </a>
+
+      <a href="#" class="border border-yellow-400 px-6 py-3 rounded-xl hover:bg-yellow-400 hover:text-black transition">
+        Instagram
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-center py-6 text-gray-500">
+    © 2026 NovaWeb Studios. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
